@@ -5,6 +5,9 @@ public class Turma {
     private String nome;
     private Curso curso;
 
+    public Turma() {
+    }
+
     public Turma(String nome, Curso curso) {
         this.nome = nome;
         this.curso = curso;

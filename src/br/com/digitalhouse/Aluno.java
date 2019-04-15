@@ -8,6 +8,15 @@ public class Aluno {
     private String nome;
     private String sobrenome;
 
+    public Aluno() {
+    }
+
+    public Aluno(String ra, String nome, String sobrenome) {
+        this.ra = ra;
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+    }
+
     public String getRa() {
         return ra;
     }
@@ -34,7 +43,7 @@ public class Aluno {
 
     public void assistirAula (Set<Aula> aulas){
         for (Aula aula : aulas){
-            System.out.println(this.nome + " : assistindo a aula: " + aula.getMateria().getnome());
+            System.out.println(this.nome + " : assistindo a aula: " + aula.getMateria() .getNome ());
         }
     }
 

@@ -7,6 +7,9 @@ public class Professor implements Docente {
     private String nome;
     private String rd;
 
+    public Professor() {
+    }
+
     public Professor (String nome, String rd) {
         this.nome = nome;
         this.rd = rd;
